@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import useLocalStorage from 'use-local-storage';
 import { Box } from '@mui/material';
-import DarkMode from "./components/DarkMode";
 import "./index.css";
 
 import './App.css';

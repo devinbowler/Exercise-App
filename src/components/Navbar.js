@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Stack, Typography } from '@mui/material';
-import DarkMode from "./DarkMode";
+import setDarkMode from '../pages/Home';
+import darkMode from '../pages/Home';
 import "../index.css";
 import '../App.css';
 
@@ -21,9 +22,12 @@ const Navbar = () => (
       fontSize="24px"
       alignItems="flex-end"
     >
-      <Link to="/" id="changeHome">Home</Link>
+      <a href="#" id="changeHome">Home</a>  
       <a href="#exercises" id="changeExercises">Exercises</a>
-      <DarkMode />
+      <a href="#" id="workouts">My Workouts</a>
+      <div className="themeToggle">
+        <button onClick={console.log('yo')} class="fas fa-toggle-on"></button>
+      </div>
     </Stack>
   </Stack>
 );

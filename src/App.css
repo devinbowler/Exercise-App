@@ -3,8 +3,30 @@ html {
 }
 
 :root {
-  --blue: #474b52;
+  --background: rgb(236, 236, 236);
+  --card-background: #FFFAFB;
+  --text-primary: #000;
+  --hover: rgb(69, 69, 69);
+  --blue: #0000FF;
   --white: rgb(236, 236, 236);
+}
+
+[data-theme='dark'] {
+  --background: #474b52;
+  --card-background: #a1a1a1;
+  --text-primary: rgb(255, 255, 255);
+  --hover: rgb(69, 69, 69);
+  --blue: #4580fd;
+  --white: rgb(236, 236, 236);
+}
+
+.themeToggle i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.themeToggle {
+  text-align: center;
 }
 
 body {
@@ -15,31 +37,48 @@ body {
   transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
 }
 
-body.light {
-  --background-color: var(--white);
-  --text-color: var(--blue);
-  --font-weight: 400;
-}
-
-body.dark {
-  --background-color: var(--blue);
-  --text-color: var(--white);
-  --font-weight: 500;
-  
-}
 
 #changeHome {
-  color: rgb(0, 0, 0);
+  color: var(--text-primary);
   font-weight: 400;
   z-index: 2;
+  text-decoration: none;
+}
+
+#changeHome:hover {
+  color: var(--hover);
+  font-weight: 400;
+  z-index: 2;
+  border-bottom: 2px solid black;
+}
+
+#workouts {
+  color: var(--text-primary);
+  font-weight: 400;
+  z-index: 2;
+  text-decoration: none;
+}
+
+#workouts:hover {
+  color: var(--hover);
+  font-weight: 400;
+  z-index: 2;
+  border-bottom: 2px solid black;
 }
 
 
 #changeExercises {
   z-index: 2;
-  color: rgb(0, 0, 0);
+  color: var(--text-primary);
   font-weight: 400;
   text-decoration: none;
+}
+
+#changeExercises:hover {
+  color: var(--hover);
+  font-weight: 400;
+  z-index: 2;
+  border-bottom: 2px solid black;
 }
 
 
@@ -64,7 +103,7 @@ body.dark {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: blue;
+    color: var(--blue);
     font-size: 25px;
     border-radius: 4px;
     position: absolute;
@@ -107,8 +146,8 @@ body.dark {
   .exercise-card {
     width: 400px;
     height: 445px;
-    background: #FFFAFB;
-    border-top: 4px solid blue;
+    background: var(--card-background);
+    border-top: 4px solid var(--blue);
     border-bottom-left-radius: 20px;
     text-decoration: none;
     display: flex;
@@ -134,8 +173,8 @@ body.dark {
   }
   
   .search-btn:hover {
-    color: blue !important;
-    border: 1px solid blue !important;
+    color: var(--blue) !important;
+    border: 1px solid var(--blue) !important;
   }
   
   .exercise-video {

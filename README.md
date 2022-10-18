@@ -1,3 +1,8 @@
+This Application is built using react, it utlizes and API to display the exerises. The aplications purpose is to let a user select what exercises they want and add it to a workout routine, and they can see how to do the exercise with video and image provided by the API.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

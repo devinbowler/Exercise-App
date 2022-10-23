@@ -1,5 +1,9 @@
 This Application is built using react, it utlizes and API to display the exerises. The aplications purpose is to let a user select what exercises they want and add it to a workout routine, and they can see how to do the exercise with video and image provided by the API.
 
+When wanting to run this through termial do as follows:
+1. npm -i
+2. npm start
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
